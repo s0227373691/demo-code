@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
 function LayoutLeft({ children }) {
   const { isExpand } = useLayoutContext();
   return (
-    <div className={`layout-overflow p-4 ${isExpand ? "col-8" : "col-10"}`}>
+    <div className={`layout-left p-4 ${isExpand ? "col-8" : "col-10"}`}>
       {children}
     </div>
   );
@@ -51,7 +51,7 @@ const ExpandButton = () => {
   return (
     <div
       variant="secondary"
-      className="position-absolute top-3 end-0"
+      className="expand-button-position p-2 position-absolute top-0 end-0"
       onClick={handleExpand}
     >
       <AiOutlineExpandAlt size={30} />

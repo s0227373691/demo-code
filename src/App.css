@@ -48,13 +48,14 @@
 
 }
 
-.layout-overflow {
-  height: 100%; 
+.layout-left {
+  height: 100vh; 
   overflow-x: auto; 
+  transition: width .5s
 }
 
 .layout-right {
-  transition: max-height 0.5s ease;
+  transition: width .5s
 }
 
 .empty-div{
@@ -64,4 +65,9 @@
 
 .tracker-color {
   color: rgb(45, 48, 138);
+}
+
+.expand-button-position {
+  top: 10;
+  right: 10
 }
