@@ -49,10 +49,15 @@
 }
 
 .layout-overflow {
-  height: 80vh; 
+  height: 100vh; 
   overflow-x: auto; 
-  border: 1px solid #007bff; 
+}
+
+.layout-right {
+  transition: max-height 0.5s ease;
 }
 
 .empty-div{
+  height: 100vh;
+  box-shadow: rgb(120, 95, 187) 0px 0px 2px 0px;
 }
