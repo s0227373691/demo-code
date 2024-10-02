@@ -1,7 +1,7 @@
 import "./App.css";
 import Layout from "./components/Layout";
 import PerformanceTracker from "./components/PerformanceTracker";
-import BasicArea from "./components/BasicArea";
+import ScoreDistribution from "./components/ScoreDistribution";
 import Wrapped from "./components/Wrapped";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
             <PerformanceTracker />
           </Wrapped>
           <Wrapped>
-            <BasicArea />
+            <ScoreDistribution />
           </Wrapped>
         </section>
       </Layout.Left>
