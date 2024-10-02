@@ -2,8 +2,8 @@ import React from "react";
 
 const Wrapped = ({ children }) => {
   return (
-    <div className="p-2 col-12 col-xxl-6">
-      <div className="wrapped p-4 mb-4 rounded">{children}</div>
+    <div className="flex-grow-1 p-2 col-12 col-xxl-6">
+      <div className="wrapped h-100 p-4 rounded">{children}</div>
     </div>
   );
 };

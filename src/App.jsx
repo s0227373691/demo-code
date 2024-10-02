@@ -8,12 +8,14 @@ function App() {
   return (
     <Layout>
       <Layout.Left>
-        <Wrapped>
-          <PerformanceTracker />
-        </Wrapped>
-        <Wrapped>
-          <BasicArea />
-        </Wrapped>
+        <section className="d-flex flex-wrap">
+          <Wrapped>
+            <PerformanceTracker />
+          </Wrapped>
+          <Wrapped>
+            <BasicArea />
+          </Wrapped>
+        </section>
       </Layout.Left>
       <Layout.Right>
         <div className="empty-div position-relative border border-1 border-light rounded">

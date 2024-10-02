@@ -31,11 +31,7 @@ const Layout = ({ children }) => {
 function LayoutLeft({ children }) {
   const { isExpand } = useLayoutContext();
   return (
-    <div
-      className={`layout-overflow d-flex flex-wrap p-4 ${
-        isExpand ? "col-8" : "col-10"
-      }`}
-    >
+    <div className={`layout-overflow p-4 ${isExpand ? "col-8" : "col-10"}`}>
       {children}
     </div>
   );
