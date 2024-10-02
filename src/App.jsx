@@ -8,7 +8,7 @@ function App() {
     <Layout>
       <Layout.left>
         <PerformanceTracker />
-        {/* <BasicArea /> */}
+        <BasicArea />
       </Layout.left>
       <Layout.right>
         <div className="empty-div col-4"></div>
