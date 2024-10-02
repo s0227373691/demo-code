@@ -1,7 +1,7 @@
 #root {
   width: 100%;
   margin: 0;
-  padding: 2rem;
+  padding:  2rem 0;
   text-align: center;
 }
 
@@ -42,14 +42,14 @@
 }
 
 
-.performance-tracker {
+.wrapped {
   background-color: rgb(251, 251, 251);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 2px 0px;
 
 }
 
 .layout-overflow {
-  height: 100vh; 
+  height: 100%; 
   overflow-x: auto; 
 }
 
@@ -60,4 +60,8 @@
 .empty-div{
   height: 100vh;
   box-shadow: rgb(120, 95, 187) 0px 0px 2px 0px;
+}
+
+.tracker-color {
+  color: rgb(45, 48, 138);
 }

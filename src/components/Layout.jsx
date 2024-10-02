@@ -1,5 +1,4 @@
 import React, { useContext, useState, createContext } from "react";
-import Button from "react-bootstrap/Button";
 import { AiOutlineExpandAlt } from "react-icons/ai";
 
 const LayoutContext = createContext(null);
@@ -24,7 +23,7 @@ const useLayoutContext = () => {
 const Layout = ({ children }) => {
   return (
     <LayoutProvider>
-      <div className="d-flex w-100">{children}</div>
+      <div className="d-flex col-12">{children}</div>
     </LayoutProvider>
   );
 };
@@ -32,7 +31,11 @@ const Layout = ({ children }) => {
 function LayoutLeft({ children }) {
   const { isExpand } = useLayoutContext();
   return (
-    <div className={`p-4 layout-overflow ${isExpand ? "col" : "col-8"}`}>
+    <div
+      className={`layout-overflow d-flex flex-wrap p-4 ${
+        isExpand ? "col-8" : "col-10"
+      }`}
+    >
       {children}
     </div>
   );
@@ -40,7 +43,7 @@ function LayoutLeft({ children }) {
 function LayoutRight({ children }) {
   const { isExpand } = useLayoutContext();
   return (
-    <div className={`layout-right px-4 ${isExpand ? "col" : "col-4"}`}>
+    <div className={`layout-right px-4 ${isExpand ? "col-4" : "col-2"}`}>
       {children}
     </div>
   );
