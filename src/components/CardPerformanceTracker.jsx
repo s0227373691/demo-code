@@ -1,19 +1,20 @@
 import React from "react";
 import TrackerList from "./TrackerList";
+import CardWrapper from "./CardWrapper";
 
-const PerformanceTracker = () => {
+const CardPerformanceTracker = () => {
   return (
-    <>
+    <CardWrapper>
       <header className="d-flex align-items-center mb-3">
         <Icon />
         <span className="fs-2 px-2">Performance Tracker</span>
       </header>
       <TrackerList />
-    </>
+    </CardWrapper>
   );
 };
 
-export default PerformanceTracker;
+export default CardPerformanceTracker;
 
 function Icon({ className }) {
   return (

@@ -1,20 +1,15 @@
 import "./App.css";
 import Layout from "./components/Layout";
-import PerformanceTracker from "./components/PerformanceTracker";
-import ScoreDistribution from "./components/ScoreDistribution";
-import Wrapped from "./components/Wrapped";
+import CardPerformanceTracker from "./components/CardPerformanceTracker";
+import CardScoreDistribution from "./components/CardScoreDistribution";
 
 function App() {
   return (
     <Layout>
       <Layout.Left>
         <section className="d-flex flex-wrap">
-          <Wrapped>
-            <PerformanceTracker />
-          </Wrapped>
-          <Wrapped>
-            <ScoreDistribution />
-          </Wrapped>
+          <CardPerformanceTracker />
+          <CardScoreDistribution />
         </section>
       </Layout.Left>
       <Layout.Right>

@@ -12,7 +12,7 @@ export const LayoutProvider = ({ children }) => {
   );
 };
 
-const useLayoutContext = () => {
+export const useLayoutContext = () => {
   const context = useContext(LayoutContext);
   if (!context) {
     throw new Error("LayoutContext can not null");

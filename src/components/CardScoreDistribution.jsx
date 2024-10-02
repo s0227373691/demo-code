@@ -1,9 +1,10 @@
 import * as React from "react";
 import { LineChart } from "@mui/x-charts/LineChart";
+import CardWrapper from "./CardWrapper";
 
-const ScoreDistribution = () => {
+const CardScoreDistribution = () => {
   return (
-    <>
+    <CardWrapper>
       <header className="d-flex mb-3">
         <Icon />
         <div className="px-2">
@@ -24,11 +25,11 @@ const ScoreDistribution = () => {
           height={300}
         />
       </div>
-    </>
+    </CardWrapper>
   );
 };
 
-export default ScoreDistribution;
+export default CardScoreDistribution;
 
 function Icon() {
   return (
