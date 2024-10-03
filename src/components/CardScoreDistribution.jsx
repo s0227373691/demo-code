@@ -1,6 +1,6 @@
-import * as React from "react";
-import { LineChart } from "@mui/x-charts/LineChart";
+import React from "react";
 import CardWrapper from "./CardWrapper";
+import ScoreDistributionChart from "./ScoreDistributionChart";
 
 const CardScoreDistribution = () => {
   return (
@@ -12,18 +12,11 @@ const CardScoreDistribution = () => {
           <h5 className="fs-4 lh-1 text-start">Higher than 94% of students</h5>
         </div>
       </header>
-      <div className="d-flex justify-content-center">
-        <LineChart
-          xAxis={[{ data: [1, 2, 3, 5, 8, 10] }]}
-          series={[
-            {
-              data: [3000, 3500, 4500, 5000, 8000, 12000],
-              area: true,
-            },
-          ]}
-          width={500}
-          height={300}
-        />
+      <div
+        className="d-flex justify-content-center w-100 "
+        style={{ height: "300px" }}
+      >
+        <ScoreDistributionChart />
       </div>
     </CardWrapper>
   );
